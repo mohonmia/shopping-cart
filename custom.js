@@ -29,7 +29,7 @@
 
          function calCulate(val, subtotal,productId,itemPrice){
             var totalPrice = val*price;
-            var tax= 5*subtotal/100;
+            var tax= 2*subtotal/100;``
             var total= subtotal+tax;
             document.getElementById(productId).value = val;
             document.getElementById(itemPrice).innerText = totalPrice;
@@ -40,7 +40,7 @@
       }
 
       count("phone-plus", "phone-minus", "phone-value", "phone-price");
-      count("case-plus", "case-minus", "case-value", "case-price");
+      count("black-case-plus", "black-case-minus", "case-value", "black-case");
 
       var check=document.getElementById("checkout");
       check.addEventListener("click", function(){
